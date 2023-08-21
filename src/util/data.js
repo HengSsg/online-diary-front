@@ -6,7 +6,7 @@ export const diaryData = [
     created_at: 1692615831890,
     updated_at: 1692615831890,
     writer: 2,
-    emotion_id: 5,
+    emotion_id: 1,
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const diaryData = [
     created_at: 1692615831890,
     updated_at: 1692615831890,
     writer: 2,
-    emotion_id: 5,
+    emotion_id: 2,
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const diaryData = [
     created_at: 1692615831890,
     updated_at: 1692615831890,
     writer: 2,
-    emotion_id: 5,
+    emotion_id: 3,
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const diaryData = [
     created_at: 1692615831890,
     updated_at: 1692615831890,
     writer: 2,
-    emotion_id: 5,
+    emotion_id: 4,
   },
   {
     id: 5,

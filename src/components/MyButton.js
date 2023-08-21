@@ -1,5 +1,3 @@
-import "../App.css";
-
 const MyButton = ({ text, type, onClick }) => {
   const btnType = ["positive", "negative"].includes(type) ? type : "default";
 

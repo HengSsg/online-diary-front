@@ -1,6 +1,4 @@
-import "../App.css";
-
-const DiaryHeader = ({ headText, leftChild, rightChild }) => {
+const MyHeader = ({ headText, leftChild, rightChild }) => {
   return (
     <header>
       <div className="head_btn_left">{leftChild}</div>
@@ -10,4 +8,4 @@ const DiaryHeader = ({ headText, leftChild, rightChild }) => {
   );
 };
 
-export default DiaryHeader;
+export default MyHeader;
