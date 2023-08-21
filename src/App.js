@@ -7,6 +7,8 @@ import Login from "./pages/member/Login";
 import DiaryView from "./pages/diary/DiaryView";
 import Header from "./components/Header";
 import New from "./pages/diary/New";
+import Diary from "./pages/diary/Diary";
+import Edit from "./pages/diary/Edit";
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/mydiary" element={<DiaryView />}></Route>
           <Route path="/new" element={<New />}></Route>
-          {/* <Route path="/edit/:id" element={<Edit />}></Route> */}
-          {/* <Route path="/diary/:id" element={<Diary />}></Route> */}
+          <Route path="/edit/:id" element={<Edit />}></Route>
+          <Route path="/mydiary/:id" element={<Diary />}></Route>
           <Route path="/sharediary" element={<ShareDiary />}></Route>
           <Route path="/login" element={<Login />}></Route>
         </Routes>

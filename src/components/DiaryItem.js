@@ -11,7 +11,7 @@ const DiaryItem = ({ id, emotion_id, title, content, created_at }) => {
   const navigate = useNavigate();
 
   const goDetail = () => {
-    navigate(`/diary/${id}`);
+    navigate(`/mydiary/${id}`);
   };
 
   const goEdit = () => {

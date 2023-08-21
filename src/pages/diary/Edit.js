@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import DiaryEditor from "../components/DiaryEditor";
+import DiaryEditor from "../../components/DiaryEditor";
+import { diaryData } from "../../util/data";
 
 const Edit = () => {
   const [originData, setOriginData] = useState();
@@ -11,25 +12,11 @@ const Edit = () => {
   useEffect(() => {
     const titleElement = document.getElementsByTagName("title")[0];
     titleElement.innerHTML = `감정 일기장 - ${id}번 일기 수정`;
+    setOriginData(diaryData[0]);
   }, []);
 
-  // useEffect(() => {
-  //   if (diaryData.length >= 1) {
-  //     const targetDiary = diaryList.find(
-  //       (it) => parseInt(it.id) === parseInt(id)
-  //     );
-  //     console.log(targetDiary);
-  //     if (targetDiary) {
-  //       setOriginData(targetDiary);
-  //     } else {
-  //       alert("없는 일기입니다.");
-  //       navigate("/", { replace: true });
-  //     }
-  //   }
-  // }, [id, diaryList]);
-
   return (
-    <div>
+    <div className="Edit">
       {originData && <DiaryEditor isEdit={true} originData={originData} />}
     </div>
   );

@@ -255,6 +255,12 @@ header button {
 
 /* DiaryEditor */
 
+.Edit {
+  display: flex;
+  flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+  align-items: center; /* 요소들을 가로 방향으로 가운데 정렬 */
+}
+
 .New {
   display: flex;
   flex-direction: column; /* 요소들을 세로 방향으로 배치 */
@@ -364,6 +370,13 @@ header button {
 
 /* Diary */
 .DiaryPage {
+  display: flex;
+  flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+  align-items: center; /* 요소들을 가로 방향으로 가운데 정렬 */
+}
+
+.DiaryPage article {
+  width: 750px;
 }
 
 .DiaryPage section {
